@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tianxiang Gao — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Tianxiang Gao — Software Developer building tools that improve everyday workflows.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">TG</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Software Developer</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Tianxiang Gao</span>
+      </h1>
+      <p class="hero-subtitle">
+        I build tools that improve everyday workflows — from browser extensions to developer utilities.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="https://github.com/gaotianxiang" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">regex-search.js</span>
+        </div>
+        <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">pattern</span> = <span class="code-string">/\d{3}-\d{4}/g</span>;
+<span class="code-keyword">const</span> <span class="code-var">matches</span> = text.<span class="code-fn">match</span>(pattern);
+
+matches.<span class="code-fn">forEach</span>((<span class="code-var">m</span>, <span class="code-var">i</span>) <span class="code-keyword">=></span> {
+  <span class="code-fn">highlight</span>(m, {
+    <span class="code-prop">color</span>: i === current
+      ? <span class="code-string">'#FF8C00'</span>
+      : <span class="code-string">'#FFE066'</span>,
+  });
+});</code></pre>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Building practical tools<br>with clean code</h2>
+      <p class="section-desc">
+        I'm a developer who believes the best software is invisible — it just works. I focus on creating tools that solve real problems, with attention to performance, usability, and code quality.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Clean Code</h3>
+          <p>Writing readable, maintainable code that other developers enjoy working with.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Browser Extensions</h3>
+          <p>Building Chrome extensions with Manifest V3 that enhance the browsing experience.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Performance</h3>
+          <p>Optimizing for speed and efficiency — because every millisecond matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Chrome Extension</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Manifest V3</span>
+          </div>
+          <h3 class="project-name">Regex Search</h3>
+          <p class="project-desc">
+            A Chrome extension that supercharges the native in-page search with full JavaScript regular expression support. Find complex patterns like phone numbers, URLs, or custom formats instantly across any webpage.
+          </p>
+          <ul class="project-features">
+            <li>Full JavaScript regex pattern matching</li>
+            <li>Dual-color highlighting — yellow for all matches, orange for current</li>
+            <li>Navigate matches with Enter / Shift+Enter</li>
+            <li>Live match counter showing "x of y" results</li>
+            <li>Case-insensitive toggle</li>
+            <li>Cross-element text matching across inline HTML</li>
+            <li>Shadow DOM isolation to prevent style conflicts</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/gaotianxiang/chrome-regex-search" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="browser-mockup">
+            <div class="browser-toolbar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url">example.com</div>
+            </div>
+            <div class="browser-body">
+              <div class="search-popup">
+                <div class="search-input-mock">
+                  <span class="regex-pattern">\d{3}-\d{4}</span>
+                  <span class="match-count">3 of 8</span>
+                </div>
+                <div class="search-controls">
+                  <button class="search-btn" aria-label="Toggle case sensitivity">Aa</button>
+                  <button class="search-btn" aria-label="Previous match">&uarr;</button>
+                  <button class="search-btn" aria-label="Next match">&darr;</button>
+                  <button class="search-btn" aria-label="Close">&times;</button>
+                </div>
+              </div>
+              <div class="mock-text">
+                <p>Contact us at <span class="hl hl-active">555-1234</span> or reach our support team at <span class="hl">800-5678</span> during business hours.</p>
+                <p>For emergencies, call <span class="hl">911-0000</span> immediately.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-section">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's connect</h2>
+      <p class="section-desc">
+        Interested in working together or have a question? Feel free to reach out.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/gaotianxiang" target="_blank" rel="noopener" class="contact-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Tianxiang Gao. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
