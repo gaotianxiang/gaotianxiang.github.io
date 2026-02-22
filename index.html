@@ -165,6 +165,70 @@ matches.<span class="code-fn">forEach</span>((<span class="code-var">m</span>, <
           </div>
         </div>
       </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Chrome Extension</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Manifest V3</span>
+          </div>
+          <h3 class="project-name">USCIS Case API Viewer</h3>
+          <p class="project-desc">
+            A Chrome extension that automatically detects USCIS case receipt numbers and fetches their API responses in a beautified, interactive view — no manual lookups needed.
+          </p>
+          <ul class="project-features">
+            <li>Automatic receipt number detection across multiple prefixes</li>
+            <li>SPA-aware — handles dynamically rendered content</li>
+            <li>Collapsible JSON tree view with syntax highlighting</li>
+            <li>Raw JSON view toggle and copy to clipboard</li>
+            <li>Badge showing number of cases found</li>
+            <li>Uses existing session cookies — no separate auth required</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/gaotianxiang/uscis-api-extension" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="extension-popup-mockup">
+            <div class="ext-header">
+              <span class="ext-title">USCIS Case API Viewer</span>
+              <span class="ext-badge">3</span>
+            </div>
+            <div class="ext-body">
+              <div class="ext-case">
+                <div class="ext-case-header">
+                  <span class="ext-arrow">&#9660;</span>
+                  <span class="ext-receipt">IOE0912345678</span>
+                </div>
+                <div class="ext-json-tree">
+                  <div class="json-line"><span class="json-brace">{</span></div>
+                  <div class="json-line json-indent"><span class="json-key">"caseStatus"</span>: <span class="json-string">"Case Was Approved"</span>,</div>
+                  <div class="json-line json-indent"><span class="json-key">"formType"</span>: <span class="json-string">"I-765"</span>,</div>
+                  <div class="json-line json-indent"><span class="json-key">"receiptNumber"</span>: <span class="json-string">"IOE0912345678"</span>,</div>
+                  <div class="json-line json-indent"><span class="json-key">"lastUpdated"</span>: <span class="json-string">"2026-02-18"</span></div>
+                  <div class="json-line"><span class="json-brace">}</span></div>
+                </div>
+              </div>
+              <div class="ext-case ext-case-collapsed">
+                <div class="ext-case-header">
+                  <span class="ext-arrow">&#9654;</span>
+                  <span class="ext-receipt">IOE0912345679</span>
+                </div>
+              </div>
+              <div class="ext-case ext-case-collapsed">
+                <div class="ext-case-header">
+                  <span class="ext-arrow">&#9654;</span>
+                  <span class="ext-receipt">IOE0912345680</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
